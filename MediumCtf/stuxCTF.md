@@ -38,4 +38,11 @@ After decoding it using python script
 we got out third flag !!!
 47315028937264895539131328176684350732577039984023005189203993885687328953804202704**********
 
+## Step 3: Looking over this directory
+
+we went to above directory and after looking at its source code there was one hint was written
+/file?=
+- it can be some LFI 
+- tried different files which contain important information like /root/root.txt or /etc/passwd.
+- EveryTime i failed at last i tried index.php and I got a long string it was looking like a hex  i tried converting it into string and after reversing it i converted it using base 64 decoder and i got a php file.
 
